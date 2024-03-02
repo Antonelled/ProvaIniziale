@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class FXMLController {
 
@@ -22,14 +23,19 @@ public class FXMLController {
     private Label lblRisposta;
 
     @FXML
-    void handleButtonAction(ActionEvent event) {
-    		lblRisposta.setText("Sto premento e fremendo nella risposta");
+    private TextField txtField;
+
+    @FXML
+    void faiQuesto(ActionEvent event) {
+    			lblRisposta.setText("Sto premendo e fremendo nello sforzo");
+    			txtField.setText("Se vuoi ti aiuto");
     }
 
     @FXML
     void initialize() {
         assert btnPremi != null : "fx:id=\"btnPremi\" was not injected: check your FXML file 'Scene.fxml'.";
         assert lblRisposta != null : "fx:id=\"lblRisposta\" was not injected: check your FXML file 'Scene.fxml'.";
+        assert txtField != null : "fx:id=\"txtField\" was not injected: check your FXML file 'Scene.fxml'.";
 
     }
 }
