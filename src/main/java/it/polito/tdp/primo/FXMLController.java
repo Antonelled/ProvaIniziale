@@ -27,8 +27,8 @@ public class FXMLController {
 
     @FXML
     void faiQuesto(ActionEvent event) {
-    			lblRisposta.setText("Sto premendo e fremendo nello sforzo");
-    			txtField.setText("Se vuoi ti aiuto");
+    			lblRisposta.setText("Sto premendo e sto fremendo nello sforzo");
+    			txtField.setText("Ma se vuoi ti aiuto!");
     }
 
     @FXML
